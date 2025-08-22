@@ -1655,7 +1655,7 @@ input, select, textarea {
 		input[type="reset"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: #f98780;
+			background-color: #93ed87;
 		}
 
 		input[type="button"].large,
@@ -1672,7 +1672,7 @@ input, select, textarea {
 		input[type="reset"].style1,
 		button.style1,
 		.button.style1 {
-			background: #e97770 url("images/overlay.png");
+			background: #61d352 url("images/overlay.png");
 			color: #fff;
 		}
 
@@ -1681,7 +1681,7 @@ input, select, textarea {
 			input[type="reset"].style1:hover,
 			button.style1:hover,
 			.button.style1:hover {
-				background-color: #f98780;
+				background-color: #93ed87;
 			}
 
 			input[type="button"].style1:active,
@@ -1689,7 +1689,7 @@ input, select, textarea {
 			input[type="reset"].style1:active,
 			button.style1:active,
 			.button.style1:active {
-				background-color: #d96760;
+				background-color: #61d352;
 			}
 
 		input[type="button"].style2,
@@ -1850,7 +1850,7 @@ input, select, textarea {
 		}
 
 		.feature-list h3 {
-			color: #e97770 !important;
+			color: #61d352 !important;
 			margin: -0.35em 0 0.75em 0;
 			font-size: 1.15em;
 			letter-spacing: 0.05em;
@@ -2002,13 +2002,13 @@ input, select, textarea {
 			}
 
 		.wrapper.style1 {
-			background: #e97770 url("images/overlay.png");
+			background: #61d352 url("images/overlay.png");
 			color: #eee;
 			color: rgba(255, 255, 255, 0.75);
 		}
 
 			.wrapper.style1 .title {
-				background: #e97770 url("images/overlay.png");
+				background: #61d352 url("images/overlay.png");
 				color: #fff;
 			}
 
@@ -2061,7 +2061,7 @@ input, select, textarea {
 		justify-content: center;
 		position: relative;
 		height: 24em;
-		background: url("../../images/banner.jpg") center center;
+		background: url("../../images/soto/background.png") center center;
 		background-size: cover;
 		padding: 0;
 	}
@@ -2105,7 +2105,11 @@ input, select, textarea {
 			display: block;
 			letter-spacing: 0.2em;
 			font-size: 0.9em;
+			text-shadow: #000 2px 2px;
+
 		}
+
+		
 
 /* Nav */
 
@@ -2121,7 +2125,7 @@ input, select, textarea {
 		#nav > ul {
 			display: inline-block;
 			border-radius: 0.35em;
-			box-shadow: inset 0px 0px 1px 1px rgba(255, 255, 255, 0.25);
+			box-shadow: inset 0px 0px 2px 2px rgba(30, 30, 30, 0.722);
 			padding: 0 1.5em 0 1.5em;
 		}
 
@@ -2138,7 +2142,7 @@ input, select, textarea {
 				#nav > ul > li > a, #nav > ul > li > span {
 					display: block;
 					color: #eee;
-					color: rgba(255, 255, 255, 0.75);
+					color: rgba(255, 253, 253, 0.919);
 					text-transform: uppercase;
 					text-decoration: none;
 					font-size: 0.7em;
@@ -2258,13 +2262,15 @@ input, select, textarea {
 
 	#highlights .highlight {
 		text-align: center;
+		margin-bottom: 2rem;
 	}
 
 		#highlights .highlight h3 {
-			color: #e97770;
+			color: #61d352;
 			margin: 0 0 0.75em 0;
 			font-size: 1.15em;
 			letter-spacing: 0.05em;
+			
 		}
 
 /* Main */
@@ -2393,7 +2399,7 @@ input, select, textarea {
 				margin-left: 1em;
 				padding-left: 1em;
 				border-left: solid 1px #333;
-				border-left-color: rgba(255, 255, 255, 0.05);
+				text-shadow: 2px 2px 6px #000, 0 1px 0 #fff; /* Added text shadow for better visibility */
 			}
 
 				#copyright ul li:first-child {
@@ -2449,6 +2455,16 @@ input, select, textarea {
 				#logo h1 {
 					font-size: 1.75em;
 				}
+			#logo img{
+				filter: drop-shadow( 1px  0   0 #1a1a1a)
+					drop-shadow(-1px  0   0 #1a1a1a)
+					drop-shadow( 0    1px 0 #1a1a1a)
+					drop-shadow( 0   -1px 0 #1a1a1a)
+					drop-shadow( 1px  1px 0 #1a1a1a)
+					drop-shadow(-1px -1px 0 #1a1a1a)
+					drop-shadow( 1px -1px 0 #1a1a1a)
+					drop-shadow(-1px  1px 0 #1a1a1a);
+			}
 
 		/* Intro */
 
@@ -2983,3 +2999,29 @@ input, select, textarea {
 						}
 
 	}
+
+#logo h1 img {
+    max-width: 100%;
+    height: auto;
+    width: 420px; /* Ajusta este valor si quieres un tamaño específico */
+    display: inline-block;
+    vertical-align: middle;
+	
+}
+
+			#logo img{
+				filter: drop-shadow( 1px  0   0 #1a1a1a)
+					drop-shadow(-1px  0   0 #1a1a1a)
+					drop-shadow( 0    1px 0 #1a1a1a)
+					drop-shadow( 0   -1px 0 #1a1a1a)
+					drop-shadow( 1px  1px 0 #1a1a1a)
+					drop-shadow(-1px -1px 0 #1a1a1a)
+					drop-shadow( 1px -1px 0 #1a1a1a)
+					drop-shadow(-1px  1px 0 #1a1a1a);
+			}
+
+@media screen and (max-width: 736px) {
+    #logo h1 img {
+        width: 240px; /* Tamaño más pequeño en móviles */
+    }
+}	
